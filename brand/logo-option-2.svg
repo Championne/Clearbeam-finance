@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120" role="img" aria-label="Van Straalen Advisory">
+  <rect width="520" height="120" fill="#FFFFFF"/>
+  <circle cx="60" cy="60" r="42" fill="#0F2A44"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#E3A33B" stroke-width="2.5"/>
+  <text x="60" y="74" text-anchor="middle" font-family="Manrope, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="38" fill="#FFFFFF" letter-spacing="-1">GJ</text>
+  <text x="128" y="58" font-family="Manrope, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="34" fill="#0F2A44" letter-spacing="-0.5">Van Straalen</text>
+  <text x="130" y="88" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#1F7A7A" letter-spacing="4">ADVISORY · FINANCE &amp; AI</text>
+</svg>

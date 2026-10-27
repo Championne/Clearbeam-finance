@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" width="560" height="120" role="img" aria-label="Clearbeam Finance — by Gert Jan van Straalen">
+  <rect width="560" height="120" fill="#FFFFFF"/>
+  <g transform="translate(20,20) scale(1.25)">
+    <rect width="64" height="64" rx="14" fill="#0F2A44"/>
+    <rect x="14" y="36" width="8" height="14" rx="2" fill="#FFFFFF" opacity=".55"/>
+    <rect x="28" y="28" width="8" height="22" rx="2" fill="#FFFFFF" opacity=".8"/>
+    <rect x="42" y="20" width="8" height="30" rx="2" fill="#FFFFFF"/>
+    <path d="M10 40 L54 12" stroke="#E3A33B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="54" cy="12" r="4.5" fill="#E3A33B"/>
+  </g>
+  <text x="122" y="62" font-family="Manrope, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="38" fill="#0F2A44" letter-spacing="-0.5">Clearbeam<tspan fill="#1F7A7A" font-weight="600"> Finance</tspan></text>
+  <text x="124" y="92" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#5B6674">by Gert Jan van Straalen · Interim FP&amp;A &amp; Controlling</text>
+</svg>

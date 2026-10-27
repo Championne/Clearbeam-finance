@@ -301,3 +301,6 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700}
 /* Coming-soon note under AI headings (27 Oct 2026) */
 .coming-note{font-weight:600;color:var(--navy);max-width:44em;margin:0 0 12px}
 .teaser .coming-note{color:var(--amber);margin:0 0 10px}
+
+.steps li.step-soon{background:#FFF8EC;border-left:4px solid var(--amber);border-radius:8px;padding:16px 20px 16px 74px}
+.steps li.step-soon::before{left:18px;top:16px}

@@ -229,6 +229,7 @@ section.alt{background:var(--paper)}
 .timeline .org{color:var(--navy);font-weight:500;margin-bottom:.4em}
 .timeline ul{margin:0;padding-left:1.1em;color:var(--slate);font-size:.96rem}
 .timeline ul li{margin:.2em 0}
+.timeline p{margin:0;color:var(--slate);font-size:.96rem;line-height:1.6}
 .side h3{margin-top:1.4em}.side h3:first-child{margin-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
 .chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem}
@@ -305,3 +306,11 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700}
 .steps li.step-soon{background:#FFF8EC;border-left:4px solid var(--amber);border-radius:8px;padding:16px 20px 16px 74px}
 .steps li.step-soon::before{left:18px;top:16px}
 .steps li.step-soon .step-sub{color:var(--ink);font-weight:600;margin:2px 0 6px}
+/* Case studies: smaller middle box (ARCS rollout) */
+.cases-mid{grid-template-columns:1fr .8fr 1fr;align-items:center}
+.example-small{padding:20px 20px;font-size:.92rem}
+.example-small h3{font-size:1.05rem}
+.example-small .keyfact{font-size:.88rem;padding:10px 12px}
+@media (max-width:860px){.cases-mid{grid-template-columns:1fr;align-items:stretch}}
+.proof .country-list{list-style:disc;padding-left:20px;margin:8px 0 0}
+.proof .country-list li{padding:4px 0;border-bottom:none}

@@ -212,11 +212,8 @@ section.alt{background:var(--paper)}
 .problems{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .problems li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:10px;padding:14px 18px;color:var(--slate)}
 .problems strong{display:block;color:var(--navy);margin-bottom:2px}
-.proof{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
-.proof li{padding:14px 0;border-bottom:1px solid var(--line);color:var(--ink)}
-.proof-k{display:block;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
 .learning{font-size:.92rem;color:var(--slate);margin:0}
-@media (max-width:860px){.problems,.proof{grid-template-columns:1fr}}
+@media (max-width:860px){.problems{grid-template-columns:1fr}}
 
 /* Timeline */
 .about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px}
@@ -306,11 +303,31 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700}
 .steps li.step-soon{background:#FFF8EC;border-left:4px solid var(--amber);border-radius:8px;padding:16px 20px 16px 74px}
 .steps li.step-soon::before{left:18px;top:16px}
 .steps li.step-soon .step-sub{color:var(--ink);font-weight:600;margin:2px 0 6px}
-/* Case studies: smaller middle box (ARCS rollout) */
-.cases-mid{grid-template-columns:1fr .8fr 1fr;align-items:center}
+/* Case studies: wider column for longer ARCS copy; top-aligned */
+.cases-mid{grid-template-columns:1.65fr 1.2fr 1fr;align-items:start}
+.cases-mid > .card{height:100%}
 .example-small{padding:20px 20px;font-size:.92rem}
 .example-small h3{font-size:1.05rem}
 .example-small .keyfact{font-size:.88rem;padding:10px 12px}
 @media (max-width:860px){.cases-mid{grid-template-columns:1fr;align-items:stretch}}
-.proof .country-list{list-style:disc;padding-left:20px;margin:8px 0 0}
-.proof .country-list li{padding:4px 0;border-bottom:none}
+
+/* Track record cards + nested country lists + subtle case-study links */
+.proof{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:stretch}
+.proof > li{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;color:var(--ink);border-bottom:none}
+.proof-k{display:block;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.proof .country-list{list-style:disc;padding-left:1.15em;margin:10px 0 0;color:var(--slate);font-size:.95rem}
+.proof .country-list li{padding:3px 0;border:none;background:transparent;border-radius:0}
+.proof-wide{grid-column:1/-1}
+a.proof-case,.proof-case{display:inline-block;margin-top:10px;font-size:.82rem;font-weight:400;color:var(--slate);text-decoration:none;border-bottom:1px solid transparent;letter-spacing:0;text-transform:none}
+a.proof-case:hover,.proof-case:hover{color:var(--teal);border-bottom-color:rgba(31,122,122,.45)}
+a.proof-case::after,.proof-case::after{content:" →";font-weight:400}
+@media (max-width:860px){.proof{grid-template-columns:1fr}.proof-wide{grid-column:auto}}
+
+/* Keep case-study card content top-aligned; stretch shells evenly */
+.cases-mid > .card.example{display:flex;flex-direction:column}
+.cases-mid > .card.example .keyfact{margin-top:auto}
+
+/* Services: equal 2×2 tiles */
+.services-grid{align-items:stretch}
+.services-grid .card{display:flex;flex-direction:column;height:100%}
+.services-grid .card .card-foot{margin-top:auto}
